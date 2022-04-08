@@ -92,6 +92,9 @@ export const secondaryListItems = (
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
+      <a href="https://chitchat-node.herokuapp.com/">
+        <ListItemText primary="Forums" />
+      </a>
     </ListItemButton>
   </React.Fragment>
 );
