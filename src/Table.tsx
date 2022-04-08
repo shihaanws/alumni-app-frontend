@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import { DataGrid, GridColDef, GridApi, GridCellValue } from "@mui/x-data-grid";
-import { Link } from "react-router-dom";
 
 const columns: GridColDef[] = [
   // { field: 'id', headerName: 'ID', width: 70 },
@@ -28,8 +27,8 @@ const columns: GridColDef[] = [
     headerName: "Action",
     sortable: false,
     renderCell: (params) => {
-      const onClick = (e) => {
-        e.stopPropagation(); // don't select this row after clicking
+      const onClick = () => {
+        // e.stopPropagation(); // don't select this row after clicking
 
         const api: GridApi = params.api;
         const thisRow: Record<string, GridCellValue> = {};
